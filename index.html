@@ -5,8 +5,211 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+  	<header class="page-header">
+  			<section class="page-header-top">
+  				<!-- Здесь будет элемент формы посика-->
+  				<span>Поиск по сайту</span>
+  				<div class="personal-button">
+  					<ul class="personal-list">
+  						<li class="login-button"><a href="#">Войти</a></li>
+  						<li class="contrast-button"><a href="#">Сравнить</a></li>
+  						<li class="basket-button"><a href="#">Корзина</a></li>
+  					</ul>
+  				</div>
+  				<nav class="main-navigation">
+  					<a class="main-header-logo">
+  						<h1 class="page-logo">DEVICE</h1>  				
+  					</a>
+  					<div class="main-navigation-wrapper">
+  						<ul class="main-navigation-list">
+  							<!-- Элемент, открывающий каталог -->
+  							<li class="main-navigation-item"><span class="catalog">Каталог товаров</span></li>
+  							<li class="main-navigation-item"><a class="delivery" href="#">Доставка</a></li>
+  							<li class="main-navigation-item"><a class="guarantee" href="#">Гарантия</a></li>
+  							<li class="main-navigation-item"><a class="contats" href="#">Контакты</a></li>
+  						</ul>  						
+  					</div>  					
+  				</nav>
+  			</section>
+  	</header>
+  	<main class="container">
+  		<section class="slider">
+  			<!-- здесь будет слайдер -->
+  			<h2 class="slider-title">Делай селфи, как Бен Стиллер!</h2>
+  			<p>Самая длинная палка для селфи доступна в нашем магазине.
+  				<br>
+  				Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+				</p>
+  			<img src="img/slider-1.jpg" width="384" height="486" alt="Самая длинная палка для селфи">
+  			<a class="details" href="№"><span>Подробнее</span></a>
+  			<table class="table-slider1">
+  				<tr>
+  					<td>8,5 м</td>
+  					<td>5 кг</td>
+  					<td>Карбон</td>
+  				</tr>
+  				<tr>
+  					<td>Длина палки</td>
+  					<td>Вес палки</td>
+  					<td>Карбон</td>
+  				</tr>
+  			</table>
+  		</section>
+  		<section class="products-list">
+  			<h2 class="visually-hidden">Категории продуктов</h2>
+  			<ul class="products-list-items">
+  				<li class="products-list-item">
+  					<h3>
+  						<a href="catalog-item.html">
+  							<span class="products-category">Виртуальная реальность</span>  							
+  						</a>
+  					</h3>
+  						<p class="products-item-image">
+  							<a href="catalog-item.html">
+  								<img src="img/product-1.jpg" width="160" height="160" alt="Виртуальная реальность">
+  							</a>
+  						</p>
+  				</li>
+  				<li class="products-list-item">
+  					<h3>
+  						<a href="catalog-item.html">
+  							<span class="products-category">Моноподы для селфи</span>  							
+  						</a>
+  					</h3>
+  						<p class="products-item-image">
+  							<a href="catalog-item.html">
+  								<img src="img/product-2.jpg" width="160" height="160" alt="Моноподы для селфи">
+  							</a>
+  						</p>
+  				</li>
+  				<li class="products-list-item">
+  					<h3>
+  						<a href="catalog-item.html">
+  							<span class="products-category">Моноподы для селфи</span>  							
+  						</a>
+  					</h3>
+  						<p class="products-item-image">
+  							<a href="catalog-item.html">
+  								<img src="img/product-3.jpg" width="160" height="160" alt="Экшн-камеры">
+  							</a>
+  						</p>
+  				</li>
+  				<li class="products-list-item">
+  					<h3>
+  						<a href="catalog-item.html">
+  							<span class="products-category">Фитнес-браслеты</span>  							
+  						</a>
+  					</h3>
+  						<p class="products-item-image">
+  							<a href="catalog-item.html">
+  								<img src="img/product-4.jpg" width="160" height="160" alt="Фитнес-браслеты">
+  							</a>
+  						</p>
+  				</li>
+  				<li class="products-list-item">
+  					<h3>
+  						<a href="catalog-item.html">
+  							<span class="products-category">Умные часы</span>  							
+  						</a>
+  					</h3>
+  						<p class="products-item-image">
+  							<a href="catalog-item.html">
+  								<img src="img/product-5.jpg" width="160" height="160" alt="Умные часы">
+  							</a>
+  						</p>
+  				</li>
+  				<li class="products-list-item">
+  					<h3>
+  						<a href="catalog-item.html">
+  							<span class="products-category">Квадрокоптеры</span>  							
+  						</a>
+  					</h3>
+  						<p class="products-item-image">
+  							<a href="catalog-item.html">
+  								<img src="img/product-7.jpg" width="160" height="160" alt="Квадрокоптеры">
+  							</a>
+  						</p>
+  				</li>
+  			</ul>  			
+  		</section>
+  		<section class="features">
+  			<!-- Не знаю пока как разметить этот блок -->
+  			<ul class="features-items">
+  				<li>Доставка</li>
+  				<li>Гарантия</li>
+  				<li>Кредит</li>
+  			</ul>
+  		</section>
+  		<article class="companies">
+  			<ul class="companies-items">
+  				<li class="companies-item">
+  					<img src="img/company1.jpg" width="260" height="100" alt="Лого первой компании">
+  				</li>
+  				<li class="companies-item">
+  					<img src="img/company2.jpg" width="260" height="100" alt="Лого второй компании">
+  				</li>
+  				<li class="companies-item">
+  					<img src="img/company3.jpg" width="260" height="100" alt="Лого третьей компании">
+  				</li>
+  				<li class="companies-item">
+  					<img src="img/company4.jpg" width="260" height="100" alt="Лого четвертой компании">
+  				</li>
+  			</ul>  			
+  		</article>
+  		<section class="about-us">
+  			<h2 class="title-section">О нас</h2>
+  			<p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+  			<p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+  			<ul class="list-delivery">
+  				<li class="list-delivery-item"><a href="#">Деловые линии</a></li>
+  				<li class="list-delivery-item"><a href="#">Автотрейдинг</a></li>
+  				<li class="list-delivery-item"><a href="#">ЖелДорЭкспелиция</a></li>
+  			</ul>
+  			<!-- Не могу понять, что должно произойти с этой кнопкой или ссылкой-->
+  			<span>Подробнее о нас</span>
+  		</section>
+  		<section class="contact-us">
+  			<h2 class="title-section">Контакты</h2>
+  			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+  			<!-- Тут нужно вставить карту-->
+  			<span class="map">Карты</span>
+  			<!-- Кнопка заполнения и  отпраки формы-->
+  			<span>Напишите нам</span>
+  		</section>
+  	</main>
+  	<footer>
+  		<div class="footer-logo">DEVICE</div>
+  		<section class="address-and-phone">
+  			<p class="address">г. Москва, ул. Строителей, 15
+  			</p>
+  			<p class="phone">Тел.: +7 (495) 495-95-95
+  			</p>
+  		</section>
+  		<section class="top-footer-list">
+  			<ul>
+  				<li><a href="#">Войти</a></li>
+  				<li><a href="#">Сравнить</a></li>
+  				<li><a href="#">Корзина</a></li>
+  			</ul>
+  		</section>
+  		<section class="footer-list">
+  			<ul class="footer-list-items">
+  				<li class="footer-list-item"><a href="#">Доставка</a></li>
+  				<li class="footer-list-item"><a href="#">Гарантия</a></li>
+  				<li class="footer-list-item"><a href="#">Котакты</a></li>
+  			</ul>
+  		</section>
+  		<section class="social-buttons">
+  			<div class="footer-social">
+  				<ul>
+  					<li><a class="social-button" href="#">Фейсбук</a></li>
+  					<li><a class="social-button" href="#">Инстаграм</a></li>
+  					<li><a class="social-button" href="#">Твитер</a></li>
+  				</ul> 			
+  			</div>
+  		</section>
+  		<!-- логотип академии, ведущий на лендинг интенсива-->
+  		<span><a href="https://htmlacademy.ru/intensive/htmlcss">Логотип Академии</a></span>
+  	</footer>
   </body>
 </html>
