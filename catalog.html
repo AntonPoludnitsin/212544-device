@@ -2,7 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>Интернет-магазин:Девайс - каталог</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -50,21 +52,23 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <h1 class="page-title">Моноподы для селфи</h1>
       <ul class="breadcrumbs">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalog.html">Каталог товаров</a></li>
-        <li class="breadcrumbs-current">Моноподы для селфи</li>
+        <li class="breadcrumbs-current"><a>Моноподы для селфи</a></li>
       </ul>
       <section class="filters">
         <h2>Фильтр:</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Стоимость</legend>
-            <span class="range-roller">Меньше</span>
-            <input class="visually-hidden range" type="range" name="price" min="0" max="10000" step="1000">
-            <span class="range-roller">Больше</span>
+            <div class="ruller">
+              <div class="rule"></div>
+              <span class="slider-left"></span>
+              <span class="slider-right"></span>              
+            </div>
           </fieldset>
           <fieldset>
             <legend>Цвет</legend>
@@ -108,7 +112,7 @@
         </form>
       </section>
       <section class="sort">
-        <h2>Сортировка</h2>
+        <h2>Сортировка:</h2>
         <ul class="type-sort">
           <li class="type-sort-current"><a>По цене</a></li>
           <li><a href="#">По типу</a></li>
@@ -170,44 +174,43 @@
     </section>
         <ul class="pagination-list">
           <li class="pagination-item"><a href="#">Назад</a></li>
-          <li class="pagination-item pagination-item-current"><a>1</a></li>
-          <li class="pagination-item"><a href="#">2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item "><a>1</a></li>
+          <li class="pagination-item no-current"><a href="#">2</a></li>
+          <li class="pagination-item no-current"><a href="#">3</a></li>
           <li class="pagination-item"><a href="#">Вперед</a></li>          
         </ul>
     </main>
-    <footer>
+   <footer class="page-footer">
+      <div class="footer-top">
       <p class="footer-logo">
         <a href="#">
           <img src="img/logo-yellow.png" width="163" height="36" alt="«Device» - интернет-магазин гаджетов">
         </a>
-      </p>      
-      <div class="address-and-phone">
-        <p class="address">г. Москва, ул. Строителей, 15
-        </p>
-        <p class="phone">Тел.: +7 (495) 495-95-95
-        </p>
-      </div>
-      <div class="footer-nav">
-        <ul>
+      </p>
+      <ul class="footer-user-menu">
           <li><a href="#">Войти</a></li>
           <li><a href="#">Сравнить</a></li>
           <li><a href="#">Корзина</a></li>
         </ul>
-        <ul class="footer-list-items">
-          <li class="footer-list-item"><a href="#">Доставка</a></li>
-          <li class="footer-list-item"><a href="#">Гарантия</a></li>
-          <li class="footer-list-item"><a href="#">Котакты</a></li>
-        </ul>
       </div>
-      <div class="social-buttons">
-        <ul>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-          <li><a class="social-button" href="#">Твитер</a></li>
+      <div class="footer-middle">
+        <p class="address">г. Москва, ул. Строителей, 15
+        </p>
+        <ul class="footer-site-items">
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Котакты</a></li>
         </ul>
-      </div>
-      <!-- логотип академии, ведущий на лендинг интенсива-->
+        <p class="phone">Тел.: +7 (495) 495-95-95
+        </p>
+      </div>      
+      <div class="footer-bottom">
+        <ul class="social-buttons">
+          <li><a class="social-button-facebook" href="#">Facebook</a></li>
+          <li><a class="social-button-instagram" href="#">Instagram</a></li>
+          <li><a class="social-button-twitter" href="#">Twitter</a></li>
+        </ul>
+      </div>      
       <p class="copyright">
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy">
