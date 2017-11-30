@@ -8,59 +8,62 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="header-navigation">
-        <div class="header-logo">
-        <a class="logo" href="index.html">
+      <div class="header-logo">
+        <a class="logo">
           <img src="img/logo.png" width="164" height="36" alt="«Device» - интернет-магазин гаджетов">
         </a>
-      </div>        
+      </div>
+      <div class="header-navigation">       
       <form method="get" action="https://echo.htmlacademy.ru">
-        <label class="visually-hidden">Поиск
-          <input type="text" name="search" placeholder="Поиск по сайту">
-        </label>
+        <label class="visually-hidden" for="search">Поиск</label>
+          <input class="search" type="search" name="search" id="search" placeholder="Поиск по сайту">     
         <button class="button-search" type="submit">Найти</button>
       </form>
-      <ul class="user-navigation">
-        <li class="login"><a href="#">Валентин Петухов</a></li>
-        <li class="login-link"><a href="#">Выйти</a></li>
-        <li class="compare"><a href="#">Сравнить</a></li>
-        <li class="basket"><a href="#">Корзина</a></li>
-      </ul>
+       <ul class="user-navigation">
+          <li><a class="login" href="#">Валентин Петухов</a><a class="login-off" href="#">Выйти</a></li>
+          <li><a class="compare" href="#">Сравнить</a><a class="basket" href="#">Корзина</a></li>
+        </ul>
       </div>
       <nav class="main-navigation">
-        <ul class="main-list">          
-          <li class="main-list-item">
-            <a href="catalog.html">Каталог товаров</a>
-            <div class="sublist">
-              <ul class="sub-navigation">
-                <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="#">Моноподы для селфи</a></li>
-                <li><a href="#">Экшн-камеры</a></li>
-              </ul>
-              <ul class="sub-navigation">
-                <li><a href="#">Фитнесс-браслеты</a></li>
-                <li><a href="#">Умные часы</a></li>
-              </ul>
-              <ul class="sub-navigation">
-                <li><a href="#">Квадрокоптеры</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="main-list-item"><a class="delivery" href="#">Доставка</a></li>
-          <li class="main-list-item"><a class="guarantee" href="#">Гарантия</a></li>
-          <li class="main-list-item"><a class="contats" href="#">Контакты</a></li>
+        <div class="hidden">
+          <a href="catalog.html">Каталог товаров</a>
+        </div>
+        <ul class="site-navigation-header">
+          <li><a href="#">Доставка</a><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
+        <div class="sublist">
+          <ul class="sublist-one">
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+          </ul>
+          <ul class="sublist-two">
+            <li><a href="#">Фитнесс-браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+          </ul>
+          <ul class="sublist-three">
+            <li><a href="#">Квадрокоптеры</a></li>
+          </ul>
+        </div>          
       </nav>
     </header>
     <main class="container">
-      <h1 class="page-title">Моноподы для селфи</h1>
-      <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Каталог товаров</a></li>
-        <li class="breadcrumbs-current"><a>Моноподы для селфи</a></li>
-      </ul>
-      <section class="filters">
+      <div class="header-box">      
+        <nav class="breadcrumbs">
+          <h1 class="page-title">Моноподы для селфи</h1>
+          <ul class="breadcrumbs-list">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог товаров</a></li>
+            <li class="breadcrumbs-current"><a>Моноподы для селфи</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="filter-box">
+        <section class="filters">
+        <div class="filter-title">
         <h2>Фильтр:</h2>
+        </div>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Стоимость</legend>
@@ -111,17 +114,20 @@
           <button class="filter-button button" type="submit">Показать</button>
         </form>
       </section>
+      <div class="sort-box">
       <section class="sort">
         <h2>Сортировка:</h2>
+        <div class="sort-by">
         <ul class="type-sort">
           <li class="type-sort-current"><a>По цене</a></li>
           <li><a href="#">По типу</a></li>
           <li><a href="#">По популярности</a></li>
         </ul>
-        <ul>
+        <ul class="type-priority">
           <li><a href="#">По убыванию</a></li>
           <li class="current"><a>По возрастанию</a></li>
         </ul>
+        </div>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список моноподов для селфи</h2>
@@ -170,23 +176,21 @@
             </p>
             <span class="catalog-item-price">4 900 руб.</span>
         </li>
-      </ul>
-    </section>
-        <ul class="pagination-list">
+      </ul>    
+      <ul class="pagination-list">
           <li class="pagination-item"><a href="#">Назад</a></li>
-          <li class="pagination-item "><a>1</a></li>
-          <li class="pagination-item no-current"><a href="#">2</a></li>
-          <li class="pagination-item no-current"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">Вперед</a></li>          
-        </ul>
+          <li class="pagination-number"><a>1</a><a href="#">2</a><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">Вперед</a></li>
+        </ul>        
+      </section>
     </main>
    <footer class="page-footer">
       <div class="footer-top">
-      <p class="footer-logo">
+      <div class="footer-logo">
         <a href="#">
           <img src="img/logo-yellow.png" width="163" height="36" alt="«Device» - интернет-магазин гаджетов">
         </a>
-      </p>
+      </div>
       <ul class="footer-user-menu">
           <li><a href="#">Войти</a></li>
           <li><a href="#">Сравнить</a></li>
@@ -194,26 +198,26 @@
         </ul>
       </div>
       <div class="footer-middle">
-        <p class="address">г. Москва, ул. Строителей, 15
-        </p>
-        <ul class="footer-site-items">
+        <address class="contact">г. Москва, ул. Строителей, 15</address>
+        <ul class="main-navigation site-navigation-footer">
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Котакты</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
-        <p class="phone">Тел.: +7 (495) 495-95-95
-        </p>
-      </div>      
+        <div>
+          <a class="contact" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+      </div> 
+      </div>    
       <div class="footer-bottom">
         <ul class="social-buttons">
-          <li><a class="social-button-facebook" href="#">Facebook</a></li>
-          <li><a class="social-button-instagram" href="#">Instagram</a></li>
-          <li><a class="social-button-twitter" href="#">Twitter</a></li>
-        </ul>
-      </div>      
-      <p class="copyright">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy">
-        </a>
-      </p>
+          <li><a class="social-button-facebook" href="#"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a class="social-button-instagram" href="#"><span class="visually-hidden">Instagram</span></a></li>
+          <li><a class="social-button-twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
+        </ul>           
+        <div class="copyright">
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy">
+          </a>
+        </div>
+      </div>
     </footer>

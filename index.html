@@ -7,36 +7,32 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  	<header class="page-header">
+    <header class="page-header">
       <div class="header-logo">
         <a class="logo">
           <img src="img/logo.png" width="164" height="36" alt="«Device» - интернет-магазин гаджетов">
         </a>
       </div>
-  		<div class="header-navigation">  			
+      <div class="header-navigation">       
       <form method="get" action="https://echo.htmlacademy.ru">
-      	<label class="visually-hidden" for="search">Поиск</label>
-  				<input class="search" type="search" name="search" id="search" placeholder="Поиск по сайту">			
-  			<button class="button-search" type="submit">Найти</button>
-  		</form>
-  			<ul class="user-navigation">
-          <li><a class="login-link" href="#">Войти</a></li>
-          <li>
-            <a  class="compare" href="#">Сравнить</a>
-            <a class="basket" href="#">Корзина</a></li>
+        <label class="visually-hidden" for="search">Поиск</label>
+          <input class="search" type="search" name="search" id="search" placeholder="Поиск по сайту">     
+        <button class="button-search" type="submit">Найти</button>
+      </form>
+       <ul class="user-navigation">
+          <li><a class="login" href="#">Войти</a></li>
+          <li><a class="compare" href="#">Сравнить</a><a class="basket" href="#">Корзина</a></li>
         </ul>
-			</div>
-			<nav class="main-navigation">
-  			<div class="hidden">
+      </div>
+      <nav class="main-navigation">
+        <div class="hidden">
           <a href="catalog.html">Каталог товаров</a>
         </div>
-        <ul class="main-list">
-          <li class="main-list-item">
-            <a class="delivery" href="#">Доставка</a>
-            <a class="guarantee" href="#">Гарантия</a></li>
-          <li class="main-list-item"><a class="contats" href="#">Контакты</a></li>
+        <ul class="site-navigation-header">
+          <li><a href="#">Доставка</a><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
-  			<div class="sublist">
+        <div class="sublist">
           <ul class="sublist-one">
             <li><a href="#">Виртуальная реальность</a></li>
             <li><a href="#">Моноподы для селфи</a></li>
@@ -49,14 +45,14 @@
           <ul class="sublist-three">
             <li><a href="#">Квадрокоптеры</a></li>
           </ul>
-        </div>  				
-  		</nav>
-  	</header>
+        </div>          
+      </nav>
+    </header>
   	<main class="container">
   		<h1 class="visually-hidden">«Device» - интернет-магазин гаджетов</h1>
       <section class="slider">
       <h2 class="visually-hidden">Лучшие товары</h2>
-      <!-- Не сделал слайдер -->
+      
       <div class="slider-controls">
           <i class="active"></i>
           <i></i>
@@ -204,18 +200,18 @@
   		<section class="contact-us">
   			<h3 class="title-section">Контакты</h3>
   			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-  			<a href="#"><img src="img/map.png" width="560" height="222" alt="Адрес: г.Москва, ул. Строителей, 15"></a>  			
-  			<a class="button" href="#">Напишите нам</a>
+        <p><a href="#"><img src="img/map.png" width="560" height="222" alt="Адрес: г.Москва, ул. Строителей, 15"></a>  			
+  			<a class="button" href="#">Напишите нам</a></p>
   		</section>
     </section>
-  	</main>
+  	</main> 
   	<footer class="page-footer">
       <div class="footer-top">
-  		<p class="footer-logo">
+  		<div class="footer-logo">
   			<a href="#">
   				<img src="img/logo-yellow.png" width="163" height="36" alt="«Device» - интернет-магазин гаджетов">
   			</a>
-  		</p>
+  		</div>
       <ul class="footer-user-menu">
           <li><a href="#">Войти</a></li>
           <li><a href="#">Сравнить</a></li>
@@ -224,7 +220,7 @@
       </div>
   		<div class="footer-middle">
   			<address class="contact">г. Москва, ул. Строителей, 15</address>
-        <ul class="site-navigation site-navigation-footer">
+        <ul class="main-navigation site-navigation-footer">
           <li><a href="#">Доставка</a></li>
           <li><a href="#">Гарантия</a></li>
           <li><a href="#">Контакты</a></li>
@@ -235,16 +231,16 @@
       </div> 		
   		<div class="footer-bottom">
   			<ul class="social-buttons">
-  				<li><a class="social-button-facebook" href="#">Facebook</a></li>
-  				<li><a class="social-button-instagram" href="#">Instagram</a></li>
-  				<li><a class="social-button-twitter" href="#">Twitter</a></li>
-  			</ul>
-  		</div>  		
-  		<p class="copyright">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy">
-        </a>
-      </p>
+  				<li><a class="social-button-facebook" href="#"><span class="visually-hidden">Facebook</span></a></li>
+  				<li><a class="social-button-instagram" href="#"><span class="visually-hidden">Instagram</span></a></li>
+  				<li><a class="social-button-twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
+  			</ul>  		  		
+  		  <div class="copyright">
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-html.svg" width="27" height="35" alt="HTML Academy">
+          </a>
+        </div>
+      </div>
   	</footer>
   	<section class="modal modal-feedback">
       <h2 class="visually-hidden">Обратная связь</h2>
